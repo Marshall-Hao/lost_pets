@@ -1,0 +1,7 @@
+<%= bootstrap_form_for(@pet, class: 'form') do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_area :address %>
+  <%= f.select :species, collection: Pet::SPECIES %>
+  <%= f.date_select :found_on %>
+  <%= f.submit %>
+<% end %>
