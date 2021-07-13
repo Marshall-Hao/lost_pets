@@ -1,0 +1,10 @@
+<h1>Pokemon Info</h1>
+
+<h3><%= @pokemon.name %></h3>
+<p><%= @pokemon.species %></p>
+<p><%= @pokemon.address %></p>
+<p><%= @pokemon.found_on %></p>
+
+<%= link_to "home", pokemons_path %>
+<%= link_to "edit", edit_pokemon_path %>
+<%= link_to "delete", pokemon_path(@pokemon), method: :delete %>
